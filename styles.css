@@ -1,4 +1,57 @@
-body {
+/* Mobile Styles */
+@media (max-width: 767px) {
+    /* Navbar */
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .links-nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* Logo */
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    /* Popup */
+    .popup-content {
+      max-width: 100%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Navbar */
+    .links-nav ul li {
+      margin-left: 10px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 1024px) {
+    /* Navbar */
+    .logo-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .links-nav ul {
+      flex-direction: row;
+    }
+  
+    .links-nav ul li {
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Existing Styles */
+  /* Add your existing CSS styles here */
+  
+  body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
@@ -7,95 +60,96 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-header {
+  }
+  
+  header {
     background-color: #fff;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 100px;
-}
-
-.links-nav ul {
+  }
+  
+  .links-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row-reverse;
-}
-
-.links-nav ul li {
+  }
+  
+  .links-nav ul li {
     margin-left: 20px;
-}
-
-.links-nav ul li a {
+  }
+  
+  .links-nav ul li a {
     color: #333;
     text-decoration: none;
-}
-
-main {
+  }
+  
+  main {
     flex: 1;
     padding: 20px 10%;
-}
-
-.hero {
+  }
+  
+  .hero {
     background-color: #f9f9f9;
     padding: 50px;
     text-align: center;
-}
-
-.hero h1 {
+  }
+  
+  .hero h1 {
     font-size: 32px;
     margin-bottom: 20px;
-}
-
-.hero p {
+  }
+  
+  .hero p {
     font-size: 20px;
     color: #666;
-}
-
-.sort-bar {
+  }
+  
+  .sort-bar {
     margin-bottom: 20px;
     text-align: right;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
+  }
+  
+  th,
+  td {
     padding: 12px;
     text-align: right;
     border-bottom: 1px solid #e1e5eb;
-}
-
-th {
+  }
+  
+  th {
     font-weight: bold;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #fff;
     color: #888;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     margin-top: auto;
-}
-
-.popup {
+  }
+  
+  .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -107,63 +161,62 @@ footer {
     align-items: center;
     z-index: 999;
     display: none;
-}
-
-.popup-content {
+  }
+  
+  .popup-content {
     background-color: #fff;
     padding: 40px;
     border-radius: 6px;
     max-width: 400px;
     width: 90%;
     text-align: center;
-}
-
-.popup-content h2 {
+  }
+  
+  .popup-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-.popup-content form {
+  }
+  
+  .popup-content form {
     display: flex;
     flex-direction: column;
-}
-
-.popup-content form input {
+  }
+  
+  .popup-content form input {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.popup-content form button {
+  }
+  
+  .popup-content form button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.popup-content form button:hover {
+  }
+  
+  .popup-content form button:hover {
     background-color: #555;
-}
-
-.close-popup {
+  }
+  
+  .close-popup {
     position: absolute;
     top: 10px;
     right: 10px;
     color: #888;
     text-decoration: none;
     font-size: 20px;
-}
-
-
-.popup {
+  }
+  
+  .popup {
     /* Existing styles */
     display: none;
-}
-
-.close-popup {
+  }
+  
+  .close-popup {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -175,39 +228,39 @@ footer {
   .popup-content {
     position: relative;
   }
-
-/* Existing CSS styles */
-
-.subscribe-section {
+  
+  /* Existing CSS styles */
+  
+  .subscribe-section {
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 20px;
     border-radius: 6px;
     text-align: center;
-}
-
-.subscribe-section h2 {
+  }
+  
+  .subscribe-section h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
-}
-
-#subscribe-form {
+  }
+  
+  #subscribe-form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-#subscribe-form input[type="email"] {
+  }
+  
+  #subscribe-form input[type="email"] {
     padding: 12px;
     border: none;
     border-radius: 4px;
     width: 300px;
     margin-right: 10px;
-}
-
-#subscribe-form button {
+  }
+  
+  #subscribe-form button {
     padding: 12px 24px;
     background-color: #333;
     color: #fff;
@@ -215,13 +268,13 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#subscribe-form button:hover {
+  }
+  
+  #subscribe-form button:hover {
     background-color: #555;
-}
-
-.sort-bar label {
+  }
+  
+  .sort-bar label {
     color: #333;
     margin-right: 10px;
   }
