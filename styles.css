@@ -220,3 +220,40 @@ footer {
 #subscribe-form button:hover {
     background-color: #555;
 }
+
+.sort-bar label {
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  #sort-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-review-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .add-review-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #add-review-btn {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-review-btn:hover {
+    background-color: #555;
+  }
+  
