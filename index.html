@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=hebrew" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-nav">
+                <img src="logo.png" alt="לוגו" class="logo">
+            </div>
+            <div class="links-nav">
+                <ul>
+                    <li><a href="#" id="register-btn">הרשמה / כניסה</a></li>
+                    <li><a href="#">אודות</a></li>
+                    <li><a href="#">שאלות נפוצות</a></li>
+                    <li><a href="#">צרו קשר</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>ברוכים הבאים למערכת חיפוש רכבים</h1>
+            <p>חפשו וסננו רכבים על פי מאפיינים שונים וקבלו ביקורות משתמשים</p>
+        </section>
+
+        <div class="sort-bar">
+            <label for="sort-select">מיין לפי:</label>
+            <select id="sort-select">
+                <option value="brand">יצרן</option>
+                <option value="make">דגם</option>
+                <option value="model">תת דגם</option>
+                <option value="year">שנה</option>
+                <option value="fuelEfficiency">יכולת דלק</option>
+                <option value="reliability">אמינות</option>
+                <option value="safety">בטיחות</option>
+            </select>
+        </div>
+
+        <table id="cars-table">
+            <thead>
+                <tr>
+                    <th>יצרן</th>
+                    <th>דגם</th>
+                    <th>תת דגם</th>
+                    <th>שנה</th>
+                    <th>יכולת דלק</th>
+                    <th>אמינות</th>
+                    <th>בטיחות</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- טבלת הנתונים תופעל כאן -->
+            </tbody>
+        </table>
+
+        <div class="subscribe-section">
+            <h2>הירשם לניוזלטר שלנו</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="כתובת המייל שלך">
+                <button type="submit">הירשם</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 CarSpecs Inc.</p>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+          <a href="#" class="close-popup" id="close-popup">&#10005;</a>
+          <a href="#" class="exit-btn" id="exit-btn">סגור</a>
+          <h2>הרשמה / כניסה</h2>
+          <form id="login-form">
+            <input type="text" placeholder="שם משתמש" id="username-input">
+            <input type="password" placeholder="סיסמה" id="password-input">
+            <button type="submit">התחברות</button>
+          </form>
+        </div>
+      </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
