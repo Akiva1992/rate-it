@@ -10,26 +10,32 @@
     <header>
         <nav>
             <div class="logo-nav">
-                <img src="logo.png" alt="לוגו" class="logo">
+                <img src="./rate-it-logos_transparent-cropped.svg" alt="לוגו" class="logo">
             </div>
             <div class="links-nav">
                 <ul>
-                    <li><a href="#" id="register-btn">הרשמה / כניסה</a></li>
                     <li><a href="#">אודות</a></li>
                     <li><a href="#">שאלות נפוצות</a></li>
                     <li><a href="#">צרו קשר</a></li>
+                    <li><a href="#" id="register-btn">הרשמה / כניסה</a></li>
                 </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
         </nav>
     </header>
+    
 
     <main>
+        <div class="middle">
         <section class="hero">
             <h1>ברוכים הבאים למערכת חיפוש רכבים</h1>
             <p>חפשו וסננו רכבים על פי מאפיינים שונים וקבלו ביקורות משתמשים</p>
         </section>
 
-        <div class="middle">
             <div class="sort-bar">
                 <label for="sort-select">מיין לפי:</label>
                 <select id="sort-select">
@@ -42,29 +48,31 @@
                     <option value="safety">בטיחות</option>
                 </select>
             </div>
-            <table id="cars-table">
-                <thead>
-                    <tr>
-                        <th>יצרן</th>
-                        <th>דגם</th>
-                        <th>תת דגם</th>
-                        <th>שנה</th>
-                        <th>יכולת דלק</th>
-                        <th>אמינות</th>
-                        <th>בטיחות</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Table data will be dynamically generated here -->
-                </tbody>
-            </table>
-        </div>
-
-        <div class="bottom">
+            <div class="table-wrapper">
+                <table id="cars-table">
+                    <thead>
+                        <tr>
+                            <th>יצרן</th>
+                            <th>דגם</th>
+                            <th>תת דגם</th>
+                            <th>שנה</th>
+                            <th>יכולת דלק</th>
+                            <th>אמינות</th>
+                            <th>בטיחות</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table data will be dynamically generated here -->
+                    </tbody>
+                </table>
+            </div>
             <div class="add-review-section">
                 <h2>הוסף ביקורת חדשה</h2>
                 <button id="add-review-btn">הוסף ביקורת</button>
             </div>
+        </div>
+
+        <!-- <div class="bottom">
             <div class="subscribe-section">
                 <h2>הירשם לניוזלטר שלנו</h2>
                 <form id="subscribe-form">
@@ -72,7 +80,7 @@
                     <button type="submit">הירשם</button>
                 </form>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <footer>

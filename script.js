@@ -20,6 +20,150 @@ document.addEventListener('DOMContentLoaded', function() {
         reliability: '8/10',
         safety: '8/10'
       },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
+      {
+        brand: 'Toyota',
+        make: 'Corolla',
+        model: 'S',
+        year: 2023,
+        fuelEfficiency: '30 MPG',
+        reliability: '9/10',
+        safety: '9/10'
+      },
+      {
+        brand: 'Honda',
+        make: 'Civic',
+        model: 'EX',
+        year: 2023,
+        fuelEfficiency: '32 MPG',
+        reliability: '8/10',
+        safety: '8/10'
+      },
       // Add more car data here
     ];
   
@@ -166,4 +310,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.links-nav ul');
+
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+});
