@@ -29,47 +29,49 @@
             <p>חפשו וסננו רכבים על פי מאפיינים שונים וקבלו ביקורות משתמשים</p>
         </section>
 
-        <div class="sort-bar">
-            <label for="sort-select">מיין לפי:</label>
-            <select id="sort-select">
-                <option value="brand">יצרן</option>
-                <option value="make">דגם</option>
-                <option value="model">תת דגם</option>
-                <option value="year">שנה</option>
-                <option value="fuelEfficiency">יכולת דלק</option>
-                <option value="reliability">אמינות</option>
-                <option value="safety">בטיחות</option>
-            </select>
+        <div class="middle">
+            <div class="sort-bar">
+                <label for="sort-select">מיין לפי:</label>
+                <select id="sort-select">
+                    <option value="brand">יצרן</option>
+                    <option value="make">דגם</option>
+                    <option value="model">תת דגם</option>
+                    <option value="year">שנה</option>
+                    <option value="fuelEfficiency">יכולת דלק</option>
+                    <option value="reliability">אמינות</option>
+                    <option value="safety">בטיחות</option>
+                </select>
+            </div>
+            <table id="cars-table">
+                <thead>
+                    <tr>
+                        <th>יצרן</th>
+                        <th>דגם</th>
+                        <th>תת דגם</th>
+                        <th>שנה</th>
+                        <th>יכולת דלק</th>
+                        <th>אמינות</th>
+                        <th>בטיחות</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table data will be dynamically generated here -->
+                </tbody>
+            </table>
         </div>
 
-        <table id="cars-table">
-            <thead>
-                <tr>
-                    <th>יצרן</th>
-                    <th>דגם</th>
-                    <th>תת דגם</th>
-                    <th>שנה</th>
-                    <th>יכולת דלק</th>
-                    <th>אמינות</th>
-                    <th>בטיחות</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Table data will be dynamically generated here -->
-            </tbody>
-        </table>
-
-        <div class="add-review-section">
-            <h2>הוסף ביקורת חדשה</h2>
-            <button id="add-review-btn">הוסף ביקורת</button>
-        </div>
-
-        <div class="subscribe-section">
-            <h2>הירשם לניוזלטר שלנו</h2>
-            <form id="subscribe-form">
-                <input type="email" placeholder="כתובת המייל שלך">
-                <button type="submit">הירשם</button>
-            </form>
+        <div class="bottom">
+            <div class="add-review-section">
+                <h2>הוסף ביקורת חדשה</h2>
+                <button id="add-review-btn">הוסף ביקורת</button>
+            </div>
+            <div class="subscribe-section">
+                <h2>הירשם לניוזלטר שלנו</h2>
+                <form id="subscribe-form">
+                    <input type="email" placeholder="כתובת המייל שלך">
+                    <button type="submit">הירשם</button>
+                </form>
+            </div>
         </div>
     </main>
 
